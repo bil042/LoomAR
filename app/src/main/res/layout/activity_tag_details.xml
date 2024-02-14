@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_gravity="center"
+        android:src="@drawable/arrow_back_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="@string/equipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/llminimize"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:text="@string/minimize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginStart="@dimen/dimen_30" />
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgTag"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon"
+        android:background="@color/red"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTagName"
+            android:text="name"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="type"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlViewInAR"
+        android:background="@drawable/border"
+        android:layout_margin="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40">
+
+        <TextView
+            android:textColor="@color/green"
+            android:text="View Equipment in AR"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Details"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Observations"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tab3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Files"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/underline1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/green"/>
+
+        <View
+            android:id="@+id/underline2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"/>
+
+        <View
+            android:id="@+id/underline3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"/>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:textSize="16sp"
+        android:text="ID"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:text="891231"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Sub-Type"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Sub-Type"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_5"
+          android:layout_marginBottom="@dimen/dimen_10"
+          android:textColor="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Code"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Code"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_5"
+          android:layout_marginBottom="@dimen/dimen_10"
+          android:textColor="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Weight"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Weight"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_5"
+          android:layout_marginBottom="@dimen/dimen_10"
+          android:textColor="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Description"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Description"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_5"
+          android:layout_marginBottom="@dimen/dimen_10"
+          android:textColor="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Colour Tag"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <com.google.android.material.imageview.ShapeableImageView
+          android:id="@+id/imgColorTag"
+          android:layout_width="@dimen/dimen_20"
+          android:layout_height="@dimen/dimen_20"
+          android:layout_marginStart="@dimen/dimen_20"
+          android:layout_marginTop="@dimen/dimen_10"
+          android:layout_marginEnd="@dimen/dimen_10"
+          android:layout_marginBottom="@dimen/dimen_10"
+          android:scaleType="fitXY"
+          android:background="@color/red"
+          app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Parent Asset"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textSize="16sp"
+          android:text="Parent Asset"
+          android:layout_marginStart="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_5"
+          android:layout_marginBottom="@dimen/dimen_10"
+          android:textColor="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

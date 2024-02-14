@@ -1,0 +1,58 @@
+<!--
+   Copyright 2018 Google LLC.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<resources>
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+  <style name="heading_bold_txt_style">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textSize">@dimen/heading_bold_txt_size</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:layout_marginEnd">@dimen/heading_bold_txt_end_margin</item>
+    <item name="android:layout_marginStart">@dimen/heading_bold_txt_margin</item>
+  </style>
+
+  <style name="txt_style">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textSize">@dimen/dimen_20_sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:layout_marginBottom">@dimen/dimen_10</item>
+  </style>
+
+  <style name="image_view_style">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_marginEnd">@dimen/heading_bold_txt_end_margin</item>
+    <item name="android:layout_marginStart">@dimen/heading_bold_txt_margin</item>
+    <item name="android:paddingTop">@dimen/dimen_10</item>
+    <item name="android:paddingBottom">@dimen/dimen_10</item>
+  </style>
+
+  <style name="image_view_style_2">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_marginEnd">@dimen/heading_bold_txt_end_margin</item>
+    <item name="android:paddingTop">@dimen/dimen_10</item>
+    <item name="android:paddingBottom">@dimen/dimen_10</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+    <item name="cornerSize">50%</item>
+  </style>
+
+</resources>

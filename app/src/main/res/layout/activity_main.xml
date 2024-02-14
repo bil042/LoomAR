@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <LinearLayout
+        android:layout_above="@+id/fab"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            style="@style/image_view_style"
+            android:id="@+id/imgBack"
+            android:layout_above="@+id/tvHeading"
+            android:src="@drawable/arrow_back_" />
+
+        <TextView
+            style="@style/txt_style"
+            android:text="@string/ar"
+            android:layout_toEndOf="@id/imgBack"
+            android:layout_above="@+id/tvHeading" />
+
+        <TextView
+            style="@style/heading_bold_txt_style"
+            android:id="@+id/tvHeading"
+            android:layout_centerVertical="true"
+            android:text="@string/equipment"/>
+
+        <ImageView
+            style="@style/image_view_style_2"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tvHeading"
+            android:src="@drawable/arrow_down" />
+
+        <EditText
+            android:id="@+id/searchViewTags"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentBottom="true"
+            android:textColorHint="@color/background"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/ic_baseline_search"
+            android:drawablePadding="@dimen/dimen_15"
+            android:hint="@string/search"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:layout_toStartOf="@+id/tvFilter"
+            />
+
+        <TextView
+            android:id="@+id/tvFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:text="@string/filter"
+            android:textColor="@color/green" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTagList"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_10"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal" />
+</RelativeLayout>
