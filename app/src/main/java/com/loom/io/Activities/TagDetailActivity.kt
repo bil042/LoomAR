@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.google.android.material.imageview.ShapeableImageView
@@ -22,6 +23,7 @@ class TagDetailActivity : AppCompatActivity() {
         val tvTagName: TextView = findViewById(R.id.tvTagName)
         val imgTag: ShapeableImageView = findViewById(R.id.imgTag)
         val imgColorTag: ShapeableImageView = findViewById(R.id.imgColorTag)
+        val imgBack: ImageView = findViewById(R.id.imgBack)
         val rlViewInAR: RelativeLayout = findViewById(R.id.rlViewInAR)
 
         tvTagName.text = tagList.get(Constants.position).tagName
@@ -40,5 +42,18 @@ class TagDetailActivity : AppCompatActivity() {
             }
         }
 
+        imgBack.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
